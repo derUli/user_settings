@@ -1,0 +1,10 @@
+{
+	"id": "user_settings",
+	"version": "1.0",
+	"description": "User Settings API for UliCMS",
+	"categories": [
+		"development"
+	],
+	"compatible_from": "2017.3.15",
+	"dependencies": []
+}
