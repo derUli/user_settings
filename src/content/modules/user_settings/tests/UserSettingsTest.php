@@ -1,5 +1,5 @@
 <?php
-class UserSettingsTest extends PHPUnit_Framework_TestCase {
+class UserSettingsTest extends \PHPUnit\Framework\TestCase {
 	private $user1 = null;
 	private $user2 = null;
 	public function setUp() {
