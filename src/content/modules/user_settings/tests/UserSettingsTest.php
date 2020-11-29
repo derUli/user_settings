@@ -2,7 +2,7 @@
 class UserSettingsTest extends \PHPUnit\Framework\TestCase {
 	private $user1 = null;
 	private $user2 = null;
-	public function setUp() {
+	protected function setUp(): void {
 		@session_start ();
 		$user = new User ();
 		$user->setUsername ( "user1" );
@@ -19,7 +19,7 @@ class UserSettingsTest extends \PHPUnit\Framework\TestCase {
 		$user->save ();
 		$this->user2 = $user;
 	}
-	public function tearDown() {
+	protected function tearDown(): void {
 		$this->user1->delete ();
 		$this->user2->delete ();
 		@session_destroy ();
